@@ -1,0 +1,473 @@
+@import 'cores';
+@import 'typografia';
+@import 'spacing';
+
+// Home 
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    
+    nav{
+        margin-right: 205px;
+    }
+   
+ 
+    
+    ul{
+        display: flex;
+
+    }
+
+    li{
+        margin: 10px;
+        padding: 15px 12px;
+      
+        
+    }
+
+      #botao{
+        
+        padding: 18px 24px;
+        background-color: $botao;
+        border-radius: 5px;
+        color: white;
+        margin-right: 150px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 10px;
+        font-weight: bold;
+        font-size: 18px;
+        
+       
+
+    }
+}
+
+#home{
+    width: 100%;
+ 
+  
+}
+
+.container {
+    max-width: 1220px;
+    margin: 0 auto;
+    height: auto;
+}
+ .home-conteudo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        div .texto-inicial{
+            max-width: 349px;
+            font-weight: 500;
+            padding: 10px;
+       
+           
+         
+           
+        
+        }
+
+        .cards-contato{
+            display: flex;
+            padding: 10px;
+            margin: 15px;
+
+            .card-contato{
+                margin: 15px;
+                img{
+                    max-width: 41px;
+                }
+            }
+        }
+       
+        
+    
+        div #foto-perfil{
+            width: 100%;
+            height: 500px;
+            
+        }
+    
+    }
+
+
+@media (max-width: 800px){
+    
+ header{    
+
+    
+    position: fixed;
+    top: 0;
+    left: 0;   
+    margin-left: 75px;
+ 
+
+
+     
+     
+    ul{
+     
+        margin-top: 15px;
+        padding: 0;
+        
+        
+
+        li{
+            border: 1px solid $yellow-primary-light;
+            padding: 5px 5px 3px 1px;
+            background-color: white;
+            text-align: center;
+            margin: 5px;           
+            font-size: 12px;
+            padding: 10px 5px;
+
+
+        }
+       
+    }
+
+    #botao{
+        display: none;
+    }
+ }
+
+main{
+    margin-top: 75px;
+
+    
+    .home-conteudo{
+        flex-direction: column-reverse;
+        
+    }
+}
+
+}
+
+
+//About-me
+
+
+#about-me{
+    width: 100%;
+    margin-top: 150px;
+    background-color: $white-bg;
+
+    h3{
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 50px;
+        background: rgba(0, 20, 203, 0.38);
+        border-radius: 10px;
+        padding: 20px;
+        color:black;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+       
+    }
+
+}
+
+.box-text {
+    max-width: 850px;
+    padding: 15px;
+    margin: 0 auto;
+
+    div {
+        margin: 20px;
+        padding: 12px 24px;
+        background-color: $white-bg2;
+        border: 0.5px dashed $blue-primary-light;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 18px;
+        margin-bottom: 50px;
+
+    }
+}
+
+.certificado {
+    p{
+        text-align: center;
+        margin: 10px 0 25px 0;
+        font-size: 20px;
+        font-weight: bold;   
+ }
+
+
+ ul li{
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+    
+
+
+ }
+
+ ul li img{
+     max-width: 15px;
+     margin: 20px;
+     margin-right: 25px;
+ }
+}
+
+@media (max-width: 800px){
+    h3{
+        margin: 35px;
+    }
+}
+
+
+//projetos
+
+#projetos{
+    width: 100%;
+    margin-top: 150px;
+    background-color: $white-bg;
+
+    h3{
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 50px;
+        background: rgba(0, 20, 203, 0.38);
+        border-radius: 10px;
+        padding: 20px;
+        color:black;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    #cards-projeto{
+       
+       
+        margin: 0 auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        max-width: 800px;
+        height: auto;
+
+    
+    }
+
+    .border-blue{
+        border: 5px solid #28357D;
+        margin: 20px;
+        height: 256px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        background: #F7F8FE;
+        
+        #projeto-title{
+         
+            text-align: center;
+            margin-top: 123px;
+            font-weight: 400;
+         }
+    }
+
+    .card-item{
+    
+        border: 5px solid #E8D524;
+        margin: 20px;
+        height: 256px;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 5px;
+        background: #F7F8FE;
+        
+       
+
+        #projeto-title{
+         
+           text-align: center;
+           margin-top: 123px;
+           font-weight: 400;
+        }
+    
+        
+        
+
+    }
+}
+
+@media (max-width:800px){
+   
+   #projetos{
+       #cards-projeto{
+           display: block;
+           max-width: 70%;
+          
+
+       }
+   }
+    
+}
+
+
+//skills
+
+#skills{
+    width: 100%;
+    margin-top: 150px;
+    background-color: $white-bg;
+
+   
+    
+
+    h3{
+        text-align: center;
+        font-weight: 500;
+        margin-bottom: 100px;
+        background: rgba(232, 213, 36, 0.77);
+        border-radius: 10px;
+        padding: 20px;
+        color:black;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .technical{
+        h5{
+            text-align: center;
+            margin: 75px 0 75px 0;
+            
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 75px;
+           
+
+            li{
+                padding: 12px 18px;
+                margin: 10px;
+                background-color:$yellow-primary;
+                color: black;
+            }
+        }
+    }
+
+    .soft{
+        h5{
+            text-align: center;
+            margin-bottom: 75px;
+
+        }
+
+        ul{
+            display: flex;
+            justify-content: center;
+            margin-bottom: 75px;
+
+            li{
+                padding: 12px 18px;
+                margin: 10px;
+                background-color: $blue-primary;
+                color: white;
+            }
+        }
+    }
+}
+
+@media (max-width: 900px){
+    #skills .technical ul{
+        display: block;
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+        li{
+            margin: 20px;
+        }
+
+       
+
+    }
+
+    #skills  .soft ul{
+        display: block;
+        max-width: 70%;
+        margin: 0 auto;
+        text-align: center;
+
+        li{
+            margin: 20px;
+        }
+    }
+}
+
+//contato   
+
+#Contato{
+    width: 100%;
+    margin-top: 100px;
+    background-color: $white-bg;
+
+
+    h5{
+        text-align: center;
+        font-weight: bold; 
+        background: rgba(232, 213, 36, 0.77);
+        border-radius: 10px;
+        padding: 20px;
+        color:$blue-primary-light;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+
+    .linha{
+        border: 1px dashed blue;
+        width: 100%;
+       
+    }
+
+    .container-contato{
+        margin: 0 auto;
+        margin-top: 50px;
+        text-align: center;
+
+        .cards-contato{
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+            margin-top: 50px;
+           
+            .card-contato{
+                margin: 20px;
+            }
+
+            img{
+                width: 100%; 
+                
+            }
+        }
+    }
+}
+
+
+
+   
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+
+
+
+
+
+ 
